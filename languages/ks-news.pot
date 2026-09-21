@@ -1,0 +1,310 @@
+# Copyright (C) 2026 Konstantin Sorokin
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: KS News 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ks-news\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-19T07:06:27+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ks-news\n"
+
+#. Plugin Name of the plugin
+#: ks-news.php
+#: ks-news.php:53
+msgid "KS News"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: ks-news.php
+msgid "https://github.com/kostyasorokin/wp-ks-news"
+msgstr ""
+
+#. Description of the plugin
+#: ks-news.php
+msgid "News as a dedicated content type with separate categories and tags."
+msgstr ""
+
+#. Author of the plugin
+#: ks-news.php
+msgid "Konstantin Sorokin"
+msgstr ""
+
+#. Author URI of the plugin
+#: ks-news.php
+msgid "https://konstantinsorokin.com"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version.
+#: ks-news.php:67
+#, php-format
+msgid "needs PHP %1$s or newer and has not loaded. This server runs PHP %2$s."
+msgstr ""
+
+#: ks-news.php:92
+msgid "could not load its classes. Run \"composer install\" in the plugin directory, or reinstall the plugin."
+msgstr ""
+
+#: src/PostType.php:22
+#: src/PostType.php:56
+#: src/PostType.php:58
+msgid "News"
+msgstr ""
+
+#: src/PostType.php:57
+#: src/PostType.php:59
+msgid "News item"
+msgstr ""
+
+#: src/PostType.php:60
+msgid "All news"
+msgstr ""
+
+#: src/PostType.php:61
+msgid "Add news item"
+msgstr ""
+
+#: src/PostType.php:62
+msgid "Add new news item"
+msgstr ""
+
+#: src/PostType.php:63
+msgid "Edit news item"
+msgstr ""
+
+#: src/PostType.php:64
+msgid "New news item"
+msgstr ""
+
+#: src/PostType.php:65
+msgid "View news item"
+msgstr ""
+
+#: src/PostType.php:66
+msgid "View news"
+msgstr ""
+
+#: src/PostType.php:67
+msgid "Search news"
+msgstr ""
+
+#: src/PostType.php:68
+msgid "No news found"
+msgstr ""
+
+#: src/PostType.php:69
+msgid "No news found in Trash"
+msgstr ""
+
+#: src/PostType.php:70
+msgid "News archives"
+msgstr ""
+
+#: src/PostType.php:71
+msgid "News attributes"
+msgstr ""
+
+#: src/PostType.php:72
+msgid "News image"
+msgstr ""
+
+#: src/PostType.php:73
+msgid "Set news image"
+msgstr ""
+
+#: src/PostType.php:74
+msgid "Remove news image"
+msgstr ""
+
+#: src/PostType.php:75
+msgid "Use as news image"
+msgstr ""
+
+#: src/PostType.php:76
+msgid "News item published."
+msgstr ""
+
+#: src/PostType.php:77
+msgid "News item updated."
+msgstr ""
+
+#: src/PostType.php:78
+msgid "News item reverted to draft."
+msgstr ""
+
+#: src/PostType.php:79
+msgid "News item scheduled."
+msgstr ""
+
+#: src/PostType.php:80
+msgid "Filter news list"
+msgstr ""
+
+#: src/PostType.php:81
+msgid "News list navigation"
+msgstr ""
+
+#: src/PostType.php:82
+msgid "News list"
+msgstr ""
+
+#: src/PostType.php:83
+msgid "News item link"
+msgstr ""
+
+#: src/PostType.php:84
+msgid "A link to a news item."
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:22
+#: src/Taxonomy/Taxonomies.php:69
+#: src/Taxonomy/Taxonomies.php:71
+msgid "News categories"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:37
+#: src/Taxonomy/Taxonomies.php:93
+#: src/Taxonomy/Taxonomies.php:95
+msgid "News tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:70
+msgid "News category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:72
+msgid "All news categories"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:73
+msgid "Edit news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:74
+msgid "View news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:75
+msgid "Update news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:76
+msgid "Add new news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:77
+msgid "New news category name"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:78
+msgid "Parent news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:79
+msgid "Parent news category:"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:80
+msgid "Search news categories"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:81
+msgid "No news categories found"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:82
+msgid "No news categories"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:83
+msgid "Filter by news category"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:84
+msgid "News categories list navigation"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:85
+msgid "News categories list"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:86
+msgid "&larr; Go to news categories"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:94
+msgid "News tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:96
+msgid "All news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:97
+msgid "Edit news tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:98
+msgid "View news tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:99
+msgid "Update news tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:100
+msgid "Add new news tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:101
+msgid "New news tag name"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:102
+msgid "Search news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:103
+msgid "Popular news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:104
+msgid "Separate news tags with commas"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:105
+msgid "Add or remove news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:106
+msgid "Choose from the most used news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:107
+msgid "No news tags found"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:108
+msgid "No news tags"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:109
+msgid "Filter by news tag"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:110
+msgid "News tags list navigation"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:111
+msgid "News tags list"
+msgstr ""
+
+#: src/Taxonomy/Taxonomies.php:112
+msgid "&larr; Go to news tags"
+msgstr ""

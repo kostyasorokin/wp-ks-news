@@ -1,0 +1,304 @@
+# Copyright (C) 2026 Konstantin Sorokin
+# This file is distributed under the GPL-3.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: KS News 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ks-news\n"
+"POT-Creation-Date: 2026-09-19T07:06:27+00:00\n"
+"PO-Revision-Date: 2026-09-19 10:15+0300\n"
+"Last-Translator: Konstantin Sorokin <mailbox@konstantinsorokin.com>\n"
+"Language-Team: Ukrainian\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Domain: ks-news\n"
+
+#. Plugin Name of the plugin
+#: ks-news.php ks-news.php:53
+msgid "KS News"
+msgstr "KS News"
+
+#. Plugin URI of the plugin
+#: ks-news.php
+msgid "https://github.com/kostyasorokin/wp-ks-news"
+msgstr "https://github.com/kostyasorokin/wp-ks-news"
+
+#. Description of the plugin
+#: ks-news.php
+msgid "News as a dedicated content type with separate categories and tags."
+msgstr "Новини як окремий тип вмісту з власними категоріями та позначками."
+
+#. Author of the plugin
+#: ks-news.php
+msgid "Konstantin Sorokin"
+msgstr "Костянтин Сорокін"
+
+#. Author URI of the plugin
+#: ks-news.php
+msgid "https://konstantinsorokin.com"
+msgstr "https://konstantinsorokin.com"
+
+#. translators: 1: required PHP version, 2: current PHP version.
+#: ks-news.php:67
+#, php-format
+msgid "needs PHP %1$s or newer and has not loaded. This server runs PHP %2$s."
+msgstr "потребує PHP %1$s або новішої версії та не завантажився. На сервері працює PHP %2$s."
+
+#: ks-news.php:92
+msgid "could not load its classes. Run \"composer install\" in the plugin directory, or reinstall the plugin."
+msgstr "не зміг завантажити свої класи. Виконайте «composer install» у каталозі плагіна або перевстановіть плагін."
+
+#: src/PostType.php:22 src/PostType.php:56 src/PostType.php:58
+msgid "News"
+msgstr "Новини"
+
+#: src/PostType.php:57 src/PostType.php:59
+msgid "News item"
+msgstr "Новина"
+
+#: src/PostType.php:60
+msgid "All news"
+msgstr "Усі новини"
+
+#: src/PostType.php:61
+msgid "Add news item"
+msgstr "Додати новину"
+
+#: src/PostType.php:62
+msgid "Add new news item"
+msgstr "Додати нову новину"
+
+#: src/PostType.php:63
+msgid "Edit news item"
+msgstr "Редагувати новину"
+
+#: src/PostType.php:64
+msgid "New news item"
+msgstr "Нова новина"
+
+#: src/PostType.php:65
+msgid "View news item"
+msgstr "Переглянути новину"
+
+#: src/PostType.php:66
+msgid "View news"
+msgstr "Переглянути новини"
+
+#: src/PostType.php:67
+msgid "Search news"
+msgstr "Шукати новини"
+
+#: src/PostType.php:68
+msgid "No news found"
+msgstr "Новин не знайдено"
+
+#: src/PostType.php:69
+msgid "No news found in Trash"
+msgstr "У кошику новин не знайдено"
+
+#: src/PostType.php:70
+msgid "News archives"
+msgstr "Архіви новин"
+
+#: src/PostType.php:71
+msgid "News attributes"
+msgstr "Атрибути новини"
+
+#: src/PostType.php:72
+msgid "News image"
+msgstr "Зображення новини"
+
+#: src/PostType.php:73
+msgid "Set news image"
+msgstr "Установити зображення новини"
+
+#: src/PostType.php:74
+msgid "Remove news image"
+msgstr "Видалити зображення новини"
+
+#: src/PostType.php:75
+msgid "Use as news image"
+msgstr "Використати як зображення новини"
+
+#: src/PostType.php:76
+msgid "News item published."
+msgstr "Новину опубліковано."
+
+#: src/PostType.php:77
+msgid "News item updated."
+msgstr "Новину оновлено."
+
+#: src/PostType.php:78
+msgid "News item reverted to draft."
+msgstr "Новину повернуто до чернеток."
+
+#: src/PostType.php:79
+msgid "News item scheduled."
+msgstr "Публікацію новини заплановано."
+
+#: src/PostType.php:80
+msgid "Filter news list"
+msgstr "Фільтрувати список новин"
+
+#: src/PostType.php:81
+msgid "News list navigation"
+msgstr "Навігація списком новин"
+
+#: src/PostType.php:82
+msgid "News list"
+msgstr "Список новин"
+
+#: src/PostType.php:83
+msgid "News item link"
+msgstr "Посилання на новину"
+
+#: src/PostType.php:84
+msgid "A link to a news item."
+msgstr "Посилання на новину."
+
+#: src/Taxonomy/Taxonomies.php:22 src/Taxonomy/Taxonomies.php:69 src/Taxonomy/Taxonomies.php:71
+msgid "News categories"
+msgstr "Категорії новин"
+
+#: src/Taxonomy/Taxonomies.php:37 src/Taxonomy/Taxonomies.php:93 src/Taxonomy/Taxonomies.php:95
+msgid "News tags"
+msgstr "Позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:70
+msgid "News category"
+msgstr "Категорія новин"
+
+#: src/Taxonomy/Taxonomies.php:72
+msgid "All news categories"
+msgstr "Усі категорії новин"
+
+#: src/Taxonomy/Taxonomies.php:73
+msgid "Edit news category"
+msgstr "Редагувати категорію новин"
+
+#: src/Taxonomy/Taxonomies.php:74
+msgid "View news category"
+msgstr "Переглянути категорію новин"
+
+#: src/Taxonomy/Taxonomies.php:75
+msgid "Update news category"
+msgstr "Оновити категорію новин"
+
+#: src/Taxonomy/Taxonomies.php:76
+msgid "Add new news category"
+msgstr "Додати нову категорію новин"
+
+#: src/Taxonomy/Taxonomies.php:77
+msgid "New news category name"
+msgstr "Назва нової категорії новин"
+
+#: src/Taxonomy/Taxonomies.php:78
+msgid "Parent news category"
+msgstr "Батьківська категорія новин"
+
+#: src/Taxonomy/Taxonomies.php:79
+msgid "Parent news category:"
+msgstr "Батьківська категорія новин:"
+
+#: src/Taxonomy/Taxonomies.php:80
+msgid "Search news categories"
+msgstr "Шукати категорії новин"
+
+#: src/Taxonomy/Taxonomies.php:81
+msgid "No news categories found"
+msgstr "Категорій новин не знайдено"
+
+#: src/Taxonomy/Taxonomies.php:82
+msgid "No news categories"
+msgstr "Немає категорій новин"
+
+#: src/Taxonomy/Taxonomies.php:83
+msgid "Filter by news category"
+msgstr "Фільтрувати за категорією новин"
+
+#: src/Taxonomy/Taxonomies.php:84
+msgid "News categories list navigation"
+msgstr "Навігація списком категорій новин"
+
+#: src/Taxonomy/Taxonomies.php:85
+msgid "News categories list"
+msgstr "Список категорій новин"
+
+#: src/Taxonomy/Taxonomies.php:86
+msgid "&larr; Go to news categories"
+msgstr "&larr; Перейти до категорій новин"
+
+#: src/Taxonomy/Taxonomies.php:94
+msgid "News tag"
+msgstr "Позначка новин"
+
+#: src/Taxonomy/Taxonomies.php:96
+msgid "All news tags"
+msgstr "Усі позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:97
+msgid "Edit news tag"
+msgstr "Редагувати позначку новин"
+
+#: src/Taxonomy/Taxonomies.php:98
+msgid "View news tag"
+msgstr "Переглянути позначку новин"
+
+#: src/Taxonomy/Taxonomies.php:99
+msgid "Update news tag"
+msgstr "Оновити позначку новин"
+
+#: src/Taxonomy/Taxonomies.php:100
+msgid "Add new news tag"
+msgstr "Додати нову позначку новин"
+
+#: src/Taxonomy/Taxonomies.php:101
+msgid "New news tag name"
+msgstr "Назва нової позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:102
+msgid "Search news tags"
+msgstr "Шукати позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:103
+msgid "Popular news tags"
+msgstr "Популярні позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:104
+msgid "Separate news tags with commas"
+msgstr "Відокремлюйте позначки новин комами"
+
+#: src/Taxonomy/Taxonomies.php:105
+msgid "Add or remove news tags"
+msgstr "Додати або видалити позначки новин"
+
+#: src/Taxonomy/Taxonomies.php:106
+msgid "Choose from the most used news tags"
+msgstr "Вибрати з найуживаніших позначок новин"
+
+#: src/Taxonomy/Taxonomies.php:107
+msgid "No news tags found"
+msgstr "Позначок новин не знайдено"
+
+#: src/Taxonomy/Taxonomies.php:108
+msgid "No news tags"
+msgstr "Немає позначок новин"
+
+#: src/Taxonomy/Taxonomies.php:109
+msgid "Filter by news tag"
+msgstr "Фільтрувати за позначкою новин"
+
+#: src/Taxonomy/Taxonomies.php:110
+msgid "News tags list navigation"
+msgstr "Навігація списком позначок новин"
+
+#: src/Taxonomy/Taxonomies.php:111
+msgid "News tags list"
+msgstr "Список позначок новин"
+
+#: src/Taxonomy/Taxonomies.php:112
+msgid "&larr; Go to news tags"
+msgstr "&larr; Перейти до позначок новин"

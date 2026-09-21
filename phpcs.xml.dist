@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<ruleset name="KS News">
+    <description>Coding standards for ks-news.</description>
+    <file>.</file>
+    <exclude-pattern>/vendor/*</exclude-pattern>
+    <exclude-pattern>/languages/*</exclude-pattern>
+    <exclude-pattern>/.phpunit.cache/*</exclude-pattern>
+    <arg name="extensions" value="php"/>
+    <arg name="colors"/>
+    <arg value="sp"/>
+    <config name="minimum_wp_version" value="6.7"/>
+    <rule ref="WordPress-Core"/>
+    <rule ref="WordPress.Security"/>
+    <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+        <exclude-pattern>/tests/bootstrap\.php</exclude-pattern>
+        <properties>
+            <property name="prefixes" type="array">
+                <element value="ksNews"/>
+                <element value="KS_NEWS"/>
+                <element value="KonstantinSorokin\News"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="WordPress.WP.I18n">
+        <properties><property name="text_domain" type="array"><element value="ks-news"/></property></properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"><severity>0</severity></rule>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Universal.Arrays.DisallowShortArraySyntax"><severity>0</severity></rule>
+    <rule ref="WordPress.NamingConventions.ValidVariableName"><severity>0</severity></rule>
+    <rule ref="WordPress.NamingConventions.ValidFunctionName"><severity>0</severity></rule>
+    <rule ref="WordPress.NamingConventions.ValidHookName"><severity>0</severity></rule>
+    <rule ref="WordPress.Files.FileName"><severity>0</severity></rule>
+    <rule ref="Squiz.Commenting.FunctionComment.Missing"><severity>0</severity></rule>
+    <rule ref="Squiz.Commenting.FunctionComment.MissingParamTag"><severity>0</severity></rule>
+    <rule ref="Squiz.Commenting.ClassComment.Missing"><severity>0</severity></rule>
+    <rule ref="Squiz.Commenting.VariableComment.Missing"><severity>0</severity></rule>
+    <rule ref="Squiz.Commenting.VariableComment.MissingVar"><severity>0</severity></rule>
+    <rule ref="Generic.Commenting.DocComment.MissingShort"><severity>0</severity></rule>
+    <rule ref="PSR2.Classes.PropertyDeclaration.Multiple"><severity>0</severity></rule>
+    <rule ref="PSR2.Classes.PropertyDeclaration.ScopeMissing"><severity>0</severity></rule>
+    <rule ref="PSR2.Classes.PropertyDeclaration.SpacingAfterType"><severity>0</severity></rule>
+</ruleset>

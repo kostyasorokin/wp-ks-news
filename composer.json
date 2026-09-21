@@ -1,0 +1,35 @@
+{
+    "name": "konstantinsorokin/ks-news",
+    "description": "News as a WordPress content type with dedicated categories and tags.",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0-or-later",
+    "homepage": "https://github.com/kostyasorokin/wp-ks-news",
+    "authors": [
+        {
+            "name": "Konstantin Sorokin",
+            "email": "mailbox@konstantinsorokin.com",
+            "homepage": "https://konstantinsorokin.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "KonstantinSorokin\\News\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.5.0"
+        },
+        "platform-check": false
+    },
+    "scripts": {
+        "post-install-cmd": "@dump",
+        "post-update-cmd": "@dump",
+        "dump": "composer dump-autoload --optimize --no-dev"
+    }
+}
