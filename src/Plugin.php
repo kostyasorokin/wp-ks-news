@@ -11,6 +11,8 @@ namespace KonstantinSorokin\News;
 
 use KonstantinSorokin\News\Attribute\Hook;
 use KonstantinSorokin\News\Support\HookBinder;
+use KonstantinSorokin\News\Template\TemplateLoader;
+use KonstantinSorokin\News\Taxonomy\LegacyTermRedirect;
 use KonstantinSorokin\News\Taxonomy\Taxonomies;
 use WP_Site;
 use WP_Textdomain_Registry;
@@ -28,6 +30,8 @@ final class Plugin {
                 new self(),
                 new Taxonomies(),
                 new PostType(),
+                new TemplateLoader(),
+                new LegacyTermRedirect(),
             ]
         );
     }

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: KS News 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ks-news\n"
-"POT-Creation-Date: 2026-09-19T07:06:27+00:00\n"
+"POT-Creation-Date: 2026-09-23T09:23:06+00:00\n"
 "PO-Revision-Date: 2026-09-19 10:15+0300\n"
 "Last-Translator: Konstantin Sorokin <mailbox@konstantinsorokin.com>\n"
 "Language-Team: Ukrainian\n"
@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : "
-"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Domain: ks-news\n"
 
 #. Plugin Name of the plugin
@@ -45,13 +45,20 @@ msgstr "https://konstantinsorokin.com"
 #: ks-news.php:67
 #, php-format
 msgid "needs PHP %1$s or newer and has not loaded. This server runs PHP %2$s."
-msgstr "потребує PHP %1$s або новішої версії та не завантажився. На сервері працює PHP %2$s."
+msgstr ""
+"потребує PHP %1$s або новішої версії та не завантажився. На сервері працює "
+"PHP %2$s."
 
 #: ks-news.php:92
-msgid "could not load its classes. Run \"composer install\" in the plugin directory, or reinstall the plugin."
-msgstr "не зміг завантажити свої класи. Виконайте «composer install» у каталозі плагіна або перевстановіть плагін."
+msgid ""
+"could not load its classes. Run \"composer install\" in the plugin "
+"directory, or reinstall the plugin."
+msgstr ""
+"не зміг завантажити свої класи. Виконайте «composer install» у каталозі "
+"плагіна або перевстановіть плагін."
 
 #: src/PostType.php:22 src/PostType.php:56 src/PostType.php:58
+#: templates/archive-news.php:29 templates/single-news.php:33
 msgid "News"
 msgstr "Новини"
 
@@ -59,7 +66,7 @@ msgstr "Новини"
 msgid "News item"
 msgstr "Новина"
 
-#: src/PostType.php:60
+#: src/PostType.php:60 templates/archive-news.php:44
 msgid "All news"
 msgstr "Усі новини"
 
@@ -159,11 +166,13 @@ msgstr "Посилання на новину"
 msgid "A link to a news item."
 msgstr "Посилання на новину."
 
-#: src/Taxonomy/Taxonomies.php:22 src/Taxonomy/Taxonomies.php:69 src/Taxonomy/Taxonomies.php:71
+#: src/Taxonomy/Taxonomies.php:22 src/Taxonomy/Taxonomies.php:69
+#: src/Taxonomy/Taxonomies.php:71 templates/archive-news.php:38
 msgid "News categories"
 msgstr "Категорії новин"
 
-#: src/Taxonomy/Taxonomies.php:37 src/Taxonomy/Taxonomies.php:93 src/Taxonomy/Taxonomies.php:95
+#: src/Taxonomy/Taxonomies.php:37 src/Taxonomy/Taxonomies.php:93
+#: src/Taxonomy/Taxonomies.php:95 templates/single-news.php:85
 msgid "News tags"
 msgstr "Позначки новин"
 
@@ -302,3 +311,42 @@ msgstr "Список позначок новин"
 #: src/Taxonomy/Taxonomies.php:112
 msgid "&larr; Go to news tags"
 msgstr "&larr; Перейти до позначок новин"
+
+#: templates/archive-news.php:84
+msgid "Previous"
+msgstr "Назад"
+
+#: templates/archive-news.php:85
+msgid "Next"
+msgstr "Далі"
+
+#: templates/archive-news.php:90
+msgid "No news yet."
+msgstr "Наразі новин немає."
+
+#: templates/single-news.php:31
+msgid "Breadcrumbs"
+msgstr "Хлібні крихти"
+
+#: templates/single-news.php:116 templates/single-news.php:117
+msgid "Recent news"
+msgstr "Останні новини"
+
+#: templates/single-news.php:130 templates/single-news.php:131
+msgid "Practice areas"
+msgstr "Напрями практики"
+
+#: templates/single-news.php:153
+msgid "Need advice on this issue?"
+msgstr "Потрібна консультація з цього питання?"
+
+#: templates/single-news.php:154
+msgid ""
+"Describe your situation — we will contact you on the next business day and "
+"suggest a plan of action."
+msgstr ""
+"Опишіть свою ситуацію — ми зв’яжемося з вами найближчим робочим днем і "
+"запропонуємо план дій."
+
+#~ msgid "Read more"
+#~ msgstr "Детальніше"

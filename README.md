@@ -13,6 +13,13 @@ KS News adds a dedicated `news` post type to WordPress. News content has its own
 - Russian and Ukrainian translations; all source strings remain English
 - Multisite-safe activation and rewrite setup
 
+Use short, descriptive English slugs when creating news categories or tags (for
+example, `military-law`), while keeping their displayed names in the site's
+language. Give every new category and tag a unique Yoast SEO meta description;
+the standard WordPress term description is not a substitute. The plugin
+preserves 301 redirects from the original transliterated slugs of the
+categories and tags published in September 2026.
+
 ## Installation
 
 1. Copy `ks-news` into `wp-content/plugins`.

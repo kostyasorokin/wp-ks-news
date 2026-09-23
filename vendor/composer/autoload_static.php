@@ -23,10 +23,13 @@ class ComposerStaticInit371d8f97c898516c4b869b4560fdfcf3
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'KonstantinSorokin\\News\\Attribute\\Hook' => __DIR__ . '/../..' . '/src/Attribute/Hook.php',
+        'KonstantinSorokin\\News\\Helpers\\News' => __DIR__ . '/../..' . '/src/Helpers/News.php',
         'KonstantinSorokin\\News\\Plugin' => __DIR__ . '/../..' . '/src/Plugin.php',
         'KonstantinSorokin\\News\\PostType' => __DIR__ . '/../..' . '/src/PostType.php',
         'KonstantinSorokin\\News\\Support\\HookBinder' => __DIR__ . '/../..' . '/src/Support/HookBinder.php',
+        'KonstantinSorokin\\News\\Taxonomy\\LegacyTermRedirect' => __DIR__ . '/../..' . '/src/Taxonomy/LegacyTermRedirect.php',
         'KonstantinSorokin\\News\\Taxonomy\\Taxonomies' => __DIR__ . '/../..' . '/src/Taxonomy/Taxonomies.php',
+        'KonstantinSorokin\\News\\Template\\TemplateLoader' => __DIR__ . '/../..' . '/src/Template/TemplateLoader.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

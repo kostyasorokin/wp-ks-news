@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-19T07:06:27+00:00\n"
+"POT-Creation-Date: 2026-09-23T09:23:06+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: ks-news\n"
@@ -53,6 +53,8 @@ msgstr ""
 #: src/PostType.php:22
 #: src/PostType.php:56
 #: src/PostType.php:58
+#: templates/archive-news.php:29
+#: templates/single-news.php:33
 msgid "News"
 msgstr ""
 
@@ -62,6 +64,7 @@ msgid "News item"
 msgstr ""
 
 #: src/PostType.php:60
+#: templates/archive-news.php:44
 msgid "All news"
 msgstr ""
 
@@ -164,12 +167,14 @@ msgstr ""
 #: src/Taxonomy/Taxonomies.php:22
 #: src/Taxonomy/Taxonomies.php:69
 #: src/Taxonomy/Taxonomies.php:71
+#: templates/archive-news.php:38
 msgid "News categories"
 msgstr ""
 
 #: src/Taxonomy/Taxonomies.php:37
 #: src/Taxonomy/Taxonomies.php:93
 #: src/Taxonomy/Taxonomies.php:95
+#: templates/single-news.php:85
 msgid "News tags"
 msgstr ""
 
@@ -307,4 +312,38 @@ msgstr ""
 
 #: src/Taxonomy/Taxonomies.php:112
 msgid "&larr; Go to news tags"
+msgstr ""
+
+#: templates/archive-news.php:84
+msgid "Previous"
+msgstr ""
+
+#: templates/archive-news.php:85
+msgid "Next"
+msgstr ""
+
+#: templates/archive-news.php:90
+msgid "No news yet."
+msgstr ""
+
+#: templates/single-news.php:31
+msgid "Breadcrumbs"
+msgstr ""
+
+#: templates/single-news.php:116
+#: templates/single-news.php:117
+msgid "Recent news"
+msgstr ""
+
+#: templates/single-news.php:130
+#: templates/single-news.php:131
+msgid "Practice areas"
+msgstr ""
+
+#: templates/single-news.php:153
+msgid "Need advice on this issue?"
+msgstr ""
+
+#: templates/single-news.php:154
+msgid "Describe your situation — we will contact you on the next business day and suggest a plan of action."
 msgstr ""

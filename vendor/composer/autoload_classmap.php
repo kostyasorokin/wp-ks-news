@@ -8,8 +8,11 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'KonstantinSorokin\\News\\Attribute\\Hook' => $baseDir . '/src/Attribute/Hook.php',
+    'KonstantinSorokin\\News\\Helpers\\News' => $baseDir . '/src/Helpers/News.php',
     'KonstantinSorokin\\News\\Plugin' => $baseDir . '/src/Plugin.php',
     'KonstantinSorokin\\News\\PostType' => $baseDir . '/src/PostType.php',
     'KonstantinSorokin\\News\\Support\\HookBinder' => $baseDir . '/src/Support/HookBinder.php',
+    'KonstantinSorokin\\News\\Taxonomy\\LegacyTermRedirect' => $baseDir . '/src/Taxonomy/LegacyTermRedirect.php',
     'KonstantinSorokin\\News\\Taxonomy\\Taxonomies' => $baseDir . '/src/Taxonomy/Taxonomies.php',
+    'KonstantinSorokin\\News\\Template\\TemplateLoader' => $baseDir . '/src/Template/TemplateLoader.php',
 );
