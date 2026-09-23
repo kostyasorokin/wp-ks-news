@@ -3,7 +3,7 @@
  * Plugin Name: KS News
  * Plugin URI:  https://github.com/kostyasorokin/wp-ks-news
  * Description: News as a dedicated content type with separate categories and tags.
- * Version:     1.0.0
+ * Version:     1.2.0
  * Author:      Konstantin Sorokin
  * Author URI:  https://konstantinsorokin.com
  * License:     GPL-3.0-or-later
@@ -22,7 +22,7 @@ declare( strict_types=1 );
 
 defined( 'ABSPATH' ) || exit;
 
-const KS_NEWS_VERSION = '1.0.0';
+const KS_NEWS_VERSION = '1.2.0';
 
 define( 'KS_NEWS_FILE', __FILE__ );
 define( 'KS_NEWS_PATH', plugin_dir_path( __FILE__ ) );

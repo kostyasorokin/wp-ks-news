@@ -78,14 +78,49 @@ $ksNewsArchiveUrl = get_post_type_archive_link( KS_NEWS_POST_TYPE );
             </div>
 
             <?php
-            the_posts_pagination(
+            $ksNewsLinks = paginate_links(
                 [
+                    'type'      => 'array',
                     'mid_size'  => 2,
                     'prev_text' => esc_html__( 'Previous', 'ks-news' ),
                     'next_text' => esc_html__( 'Next', 'ks-news' ),
                 ]
             );
             ?>
+            <?php if ( is_array( $ksNewsLinks ) && [] !== $ksNewsLinks ) : ?>
+                <nav class="kp-pagination" aria-label="<?php esc_attr_e( 'News pagination', 'ks-news' ); ?>">
+                    <ul class="pagination justify-content-center">
+                        <?php foreach ( $ksNewsLinks as $ksNewsLink ) : ?>
+                            <?php
+                            $ksNewsTag = new WP_HTML_Tag_Processor( $ksNewsLink );
+
+                            if ( ! $ksNewsTag->next_tag() ) {
+                                continue;
+                            }
+
+                            $ksNewsIsCurrent = 'page' === $ksNewsTag->get_attribute( 'aria-current' );
+                            $ksNewsIsDots    = true === $ksNewsTag->has_class( 'dots' );
+
+                            foreach ( [ 'page-numbers', 'current', 'dots', 'prev', 'next' ] as $ksNewsCoreClass ) {
+                                $ksNewsTag->remove_class( $ksNewsCoreClass );
+                            }
+
+                            $ksNewsTag->add_class( 'page-link' );
+
+                            if ( 'A' === $ksNewsTag->get_tag() ) {
+                                $ksNewsHref = (string) $ksNewsTag->get_attribute( 'href' );
+                                $ksNewsHref = remove_query_arg( 'news_per_page', $ksNewsHref );
+
+                                $ksNewsTag->set_attribute( 'href', $ksNewsHref );
+                            }
+                            ?>
+                            <li class="page-item<?php echo $ksNewsIsCurrent ? ' active' : ''; ?><?php echo $ksNewsIsDots ? ' disabled' : ''; ?>">
+                                <?php echo $ksNewsTag->get_updated_html(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- WordPress pagination markup and escaped URLs. ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </nav>
+            <?php endif; ?>
         <?php else : ?>
             <p class="ks-news-archive__empty"><?php esc_html_e( 'No news yet.', 'ks-news' ); ?></p>
         <?php endif; ?>

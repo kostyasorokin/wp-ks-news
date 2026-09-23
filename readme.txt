@@ -4,7 +4,7 @@ Tags: news, custom post type, categories, tags
 Requires at least: 6.7
 Tested up to: 7.1
 Requires PHP: 8.5
-Stable tag: 1.0.0
+Stable tag: 1.2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,6 +44,14 @@ No. News items and terms remain in the database and become available again when
 the plugin is reactivated.
 
 == Changelog ==
+
+= 1.2.0 =
+* Move the archive page size to Settings > KS News (1–100 news items per page).
+* Remove the public page-size selector and apply the setting to news, category and tag archives.
+
+= 1.1.0 =
+* Show 32 news items per archive page by default, with a front-end 16/32/64 selector.
+* Render pagination with Bootstrap 5 classes and no plugin pagination styles.
 
 = 1.0.0 =
 * Register the News post type with dedicated categories and tags.

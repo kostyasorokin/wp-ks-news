@@ -5,6 +5,8 @@ KS News adds a dedicated `news` post type to WordPress. News content has its own
 ## Features
 
 - Public news archive at `/news/`
+- 32 news items per archive page by default; configurable under **Settings → KS News** (1–100)
+- Bootstrap pagination markup without plugin pagination styles
 - Single news URLs at `/news/<name>/`
 - Category archives at `/news/category/<term>/`
 - Tag archives at `/news/tag/<term>/`

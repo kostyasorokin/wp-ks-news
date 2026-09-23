@@ -9,6 +9,7 @@ declare( strict_types=1 );
 
 namespace KonstantinSorokin\News;
 
+use KonstantinSorokin\News\Admin\SettingsPage;
 use KonstantinSorokin\News\Attribute\Hook;
 use KonstantinSorokin\News\Support\HookBinder;
 use KonstantinSorokin\News\Template\TemplateLoader;
@@ -30,6 +31,8 @@ final class Plugin {
                 new self(),
                 new Taxonomies(),
                 new PostType(),
+                new Archive(),
+                new SettingsPage(),
                 new TemplateLoader(),
                 new LegacyTermRedirect(),
             ]

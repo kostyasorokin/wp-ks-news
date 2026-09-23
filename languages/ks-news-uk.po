@@ -2,10 +2,10 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: KS News 1.0.0\n"
+"Project-Id-Version: KS News 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ks-news\n"
 "POT-Creation-Date: 2026-09-23T09:23:06+00:00\n"
-"PO-Revision-Date: 2026-09-19 10:15+0300\n"
+"PO-Revision-Date: 2026-09-23 10:15+0300\n"
 "Last-Translator: Konstantin Sorokin <mailbox@konstantinsorokin.com>\n"
 "Language-Team: Ukrainian\n"
 "Language: uk\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Domain: ks-news\n"
 
 #. Plugin Name of the plugin
-#: ks-news.php ks-news.php:53
+#: ks-news.php ks-news.php:53 src/Admin/SettingsPage.php
 msgid "KS News"
 msgstr "KS News"
 
@@ -315,6 +315,30 @@ msgstr "&larr; Перейти до позначок новин"
 #: templates/archive-news.php:84
 msgid "Previous"
 msgstr "Назад"
+
+#: src/Admin/SettingsPage.php
+msgid "News per page"
+msgstr "Новин на сторінці"
+
+#: src/Admin/SettingsPage.php
+msgid "News archive"
+msgstr "Архів новин"
+
+#: src/Admin/SettingsPage.php
+msgid "Enter a whole number from 1 to 100."
+msgstr "Введіть ціле число від 1 до 100."
+
+#: src/Admin/SettingsPage.php
+msgid "Applies to the News archive, categories and tags."
+msgstr "Застосовується до архіву новин, категорій і позначок."
+
+#: src/Admin/SettingsPage.php
+msgid "You are not allowed to manage these settings."
+msgstr "У вас немає прав на керування цими налаштуваннями."
+
+#: templates/archive-news.php
+msgid "News pagination"
+msgstr "Навігація сторінками новин"
 
 #: templates/archive-news.php:85
 msgid "Next"
